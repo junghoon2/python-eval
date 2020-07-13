@@ -1,0 +1,6 @@
+cat: 고양이
+fruit: 과일
+church: 교회
+temple: 절
+wallet: 지갑
+backpack: 책가방
