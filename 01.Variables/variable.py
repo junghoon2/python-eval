@@ -1,24 +1,18 @@
-x = 254
-y = 355
+# 변수를 선언하고 사용하는 방법
 
-print(x)
-print(x + x*2)
+# 변수 선언은 간단히 이름 쓰고 = 등호 사용해서 할당만 하면 된다.
+my_var="Hello"
 
-a = 3
-b = 3.0
-c = -6.2 
+# 사용하려면 따옴표 등 없이 이름만 명시하면 된다.
+print(my_var)
 
-print(a + b)
-print(a * c)
 
-print(a ** 2)
-print(a % 2)
 
-print(7 // 2) # 버림 나눗셈 
-print(7.0 // 2) # 버림 나눗셈 
-print(7 / 2) # 나누기
-print(8 % 3) # 나머지
+#burger_a=4600 # 띄워쓰기 없이 붙히는 게 권장일까?
+burger_a = 4600 # 수학 등호가 아니라, 지정 연산자. 
+burger_b=5600
 
-# round 반올림
-print(round(3.14592))
-print(round(3.6787, 2))
+drink = 3400
+
+print(burger_a + burger_b)
+print(burger_a * 2 + drink)
