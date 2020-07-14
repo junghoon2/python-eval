@@ -1,3 +1,25 @@
+# list append 하는 방법
+# 추가하고 삭제하는 방법 
+
+a = [3, 5, 6, 0]
+a.append(3)  # append는 하나만 가능하구나
+
+print(a)
+
+# 그럼, 2개 이상 list를 붙히려면? 합치기, join 하면 되려나? 
+
+b = [3, 4]
+
+# join 이라는 함수는 없나?
+# print(join(a, b))  
+
+# 리스트끼리 바로 더하기가 가능하구나 
+
+print(a + b)
+
+a.insert(2, 4)
+print(a)
+
 numbers = []
 print(len(numbers))  # length, len 함수 사용 가능 
 
