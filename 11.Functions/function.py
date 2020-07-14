@@ -1,8 +1,6 @@
 # 내장 함수
 print("ahk")
 print("as'd'f")
-
-
 print('as"d"f')
 
 # 외장 함수 선언하는 방법은?
@@ -32,5 +30,4 @@ def cafe_mocha_recipe():
     print("거품기로 우유 거품을 내고, 잔에 부어 준다.")
     print("생크림을 얹어 준다.")
 # 테스트 코드
-cafe_mocha_recipe()
 cafe_mocha_recipe()
