@@ -6,6 +6,8 @@ vocab = {
     "conscience": "양심",
     "civilization": "문명"
 }
+
+# Key만 따로 호출, value만 따로 호출 
 print(vocab.values())
 print(vocab.keys())
 

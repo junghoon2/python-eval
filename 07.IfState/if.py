@@ -1,4 +1,5 @@
 # if 기본 예제
+# Indentation 4개, 조건 문장 끝에 : 사용
 
 temperature = 25
 
