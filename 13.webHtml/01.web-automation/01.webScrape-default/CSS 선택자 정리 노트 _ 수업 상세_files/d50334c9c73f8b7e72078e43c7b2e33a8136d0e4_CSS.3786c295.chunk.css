@@ -1,0 +1,753 @@
+.PopupFootnote {
+  width: 92vw;
+  max-width: 300rem;
+  border-radius: .4rem;
+  box-shadow: 0 0 1rem 0 rgba(64, 61, 70, 0.1);
+  background-color: #ffffff;
+  overflow: hidden; }
+  .PopupFootnote__title {
+    padding: .6rem 2rem .5rem;
+    background-color: #dde0ea;
+    font-size: 1.2rem;
+    line-height: 1.92;
+    letter-spacing: -0.26px;
+    color: #787980; }
+  .PopupFootnote__content {
+    padding: 1.4rem 2rem;
+    font-size: 1.4rem;
+    line-height: 1.57;
+    letter-spacing: -0.3px;
+    color: #333236; }
+
+.EnableToggle__title {
+  position: relative;
+  padding-left: 2rem; }
+
+.EnableToggle__btn {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+  background-image: url(/static/images/community/dropdown-toggle.png);
+  background-size: contain;
+  transition: .2s; }
+
+.closed.EnableToggle .EnableToggle__content {
+  display: none; }
+
+.closed.EnableToggle .EnableToggle__btn {
+  transform: translateY(-50%) rotate(-90deg); }
+
+.FootnotesViewer {
+  border-top: .1rem solid #dde0ea;
+  margin: 5rem auto;
+  padding-top: 3.4rem;
+  font-size: 1.4rem; }
+  .FootnotesViewer__footnote {
+    line-height: 1.64;
+    color: #69666d; }
+    .FootnotesViewer__footnote .FootnotesViewer__footnoteIndex {
+      color: #69666d; }
+    .FootnotesViewer__footnote .QuillViewer {
+      font-size: 1.4rem; }
+      .FootnotesViewer__footnote .QuillViewer p {
+        line-height: 1.5; }
+  .FootnotesViewer__content {
+    display: flex; }
+  .FootnotesViewer__footnoteIndex {
+    flex-shrink: 0;
+    color: #00c9ff; }
+  .FootnotesViewer__highlight {
+    height: 1.6rem;
+    padding: 0 .1rem;
+    color: #69666d;
+    background-color: rgba(0, 201, 255, 0.12);
+    margin-right: .25em; }
+  .FootnotesViewer__reference {
+    display: flex;
+    font-size: 1.4rem;
+    color: #a9abb7; }
+    .FootnotesViewer__reference--title {
+      flex-shrink: 0; }
+
+.dark .FootnotesViewer {
+  border-top: .1rem solid #626682; }
+  .dark .FootnotesViewer__footnote {
+    color: #a9abb7; }
+    .dark .FootnotesViewer__footnote .FootnotesViewer__footnoteIndex {
+      color: #a9abb7; }
+    .dark .FootnotesViewer__footnote .QuillViewer {
+      color: #a9abb7 !important; }
+  .dark .FootnotesViewer__highlight {
+    color: #a9abb7; }
+
+.QuillViewer .MultiCodeBlock {
+  border-radius: .8rem;
+  overflow: hidden;
+  box-shadow: .1rem .3rem 1rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem; }
+  @media (min-width: 48em) {
+    .QuillViewer .MultiCodeBlock {
+      margin-top: 3.5rem;
+      margin-bottom: 4.5rem; } }
+  .QuillViewer .MultiCodeBlock__tab {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #eeeef1;
+    height: 3.2rem;
+    overflow-x: auto;
+    white-space: nowrap; }
+  .QuillViewer .MultiCodeBlock__tabEach {
+    background-color: #e5e5ea;
+    color: #333236;
+    font-size: 1.4rem;
+    width: 10.1rem;
+    height: 3.2rem;
+    line-height: 3.2rem;
+    text-align: center;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    display: inline-block;
+    cursor: pointer; }
+    .QuillViewer .MultiCodeBlock__tabEach.clicked {
+      background-color: #f7f7f8; }
+  .QuillViewer .MultiCodeBlock__preWrapper {
+    position: relative; }
+  .QuillViewer .MultiCodeBlock pre {
+    border-radius: 0;
+    border-left: none;
+    max-height: 40rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    min-height: 15rem; }
+    .QuillViewer .MultiCodeBlock pre::after {
+      display: none; }
+  .QuillViewer .MultiCodeBlock__preBtnWrapper {
+    background-color: #eeeef1;
+    text-align: center;
+    border-top: .1rem solid #e5e5ea; }
+  .QuillViewer .MultiCodeBlock__preBtn {
+    outline: none;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    border-radius: 0.4rem;
+    color: #ffffff;
+    background-image: linear-gradient(288deg, #6c10fe, #8a5feb); }
+    .QuillViewer .MultiCodeBlock__preBtn.clicked {
+      color: #7c00ff;
+      background-image: linear-gradient(288deg, #ffffff, #ffffff); }
+  .QuillViewer .MultiCodeBlock__iframeWrapper {
+    padding: 1rem;
+    background-color: #ffffff; }
+  .QuillViewer .MultiCodeBlock__iframe {
+    display: block;
+    width: 100%;
+    min-height: 15rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    max-height: 30rem;
+    border: none; }
+
+.QuillViewer .QuillDisplayNone {
+  display: none !important; }
+
+.dark .QuillViewer .MultiCodeBlock {
+  box-shadow: 0 0.4rem 2rem 0 rgba(27, 22, 30, 0.41); }
+  .dark .QuillViewer .MultiCodeBlock pre {
+    border-left: none; }
+  .dark .QuillViewer .MultiCodeBlock__tab {
+    background-color: #272a3a; }
+  .dark .QuillViewer .MultiCodeBlock__tabEach {
+    background-color: #555860;
+    color: white; }
+    .dark .QuillViewer .MultiCodeBlock__tabEach.clicked {
+      background-color: #212434; }
+  .dark .QuillViewer .MultiCodeBlock__preBtnWrapper {
+    background-color: #272a3a;
+    border-top: .1rem solid #212434; }
+
+/* HTML class MultiCodeBlock */
+.QuillViewer .codeit-fiddle {
+  border-radius: .8rem;
+  box-shadow: .1rem .3rem 1rem;
+  overflow: hidden;
+  margin-top: 2rem;
+  margin-bottom: 3rem; }
+  @media (min-width: 48em) {
+    .QuillViewer .codeit-fiddle {
+      margin-top: 3.5rem;
+      margin-bottom: 4.5rem; } }
+  .QuillViewer .codeit-fiddle li + li {
+    margin-top: 0; }
+  .QuillViewer .codeit-fiddle .html-css-code {
+    white-space: normal;
+    background-color: #414453; }
+    .QuillViewer .codeit-fiddle .html-css-code pre {
+      border-left: none;
+      border-radius: 0; }
+      .QuillViewer .codeit-fiddle .html-css-code pre code {
+        border: none;
+        min-height: 13rem; }
+        @media (min-width: 48em) {
+          .QuillViewer .codeit-fiddle .html-css-code pre code {
+            min-height: 16rem; } }
+      .QuillViewer .codeit-fiddle .html-css-code pre:after {
+        display: none; }
+  .QuillViewer .codeit-fiddle iframe.code-iframe {
+    background-color: white;
+    display: none; }
+  .QuillViewer .codeit-fiddle .css-div {
+    display: none; }
+  .QuillViewer .codeit-fiddle .css-div pre,
+  .QuillViewer .codeit-fiddle .html-div pre {
+    margin: 0; }
+  .QuillViewer .codeit-fiddle .run-btn-row {
+    background-color: #eeeef1;
+    text-align: center;
+    border-top: .1rem solid #e5e5ea; }
+  .QuillViewer .codeit-fiddle .run-btn-row button {
+    border-radius: .5rem;
+    border: none;
+    color: white;
+    padding: 10px;
+    outline: none; }
+  .QuillViewer .codeit-fiddle .run-btn-row .run-btn {
+    outline: none;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    border-radius: 0.4rem;
+    color: #ffffff;
+    background-image: linear-gradient(288deg, #6c10fe, #8a5feb); }
+  .QuillViewer .codeit-fiddle .run-btn-row .unrun-btn {
+    outline: none;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    border-radius: 0.4rem;
+    color: #7c00ff;
+    background-image: linear-gradient(288deg, #ffffff, #ffffff); }
+  .QuillViewer .codeit-fiddle .file-tabs {
+    list-style: none;
+    padding: 0;
+    background-color: #eeeef1;
+    height: 32px;
+    margin: 0;
+    overflow-x: auto;
+    white-space: nowrap; }
+  .QuillViewer .codeit-fiddle .file-tab {
+    background-color: #e5e5ea;
+    color: #333236;
+    font-size: 1.4rem;
+    width: 10.1rem;
+    height: 3.2rem;
+    line-height: 3.2rem;
+    text-align: center;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    display: inline-block;
+    cursor: pointer; }
+  .QuillViewer .codeit-fiddle .file-tab:not(:last-child) {
+    margin-right: 4px; }
+  .QuillViewer .codeit-fiddle .file-tab.active {
+    background-color: #f7f7f8; }
+
+.dark .QuillViewer .codeit-fiddle {
+  box-shadow: 0 0.4rem 2rem 0 rgba(27, 22, 30, 0.41); }
+  .dark .QuillViewer .codeit-fiddle .run-btn-row {
+    background-color: #272a3a;
+    border-top: .1rem solid #212434; }
+  .dark .QuillViewer .codeit-fiddle .file-tabs {
+    background-color: #272a3a; }
+  .dark .QuillViewer .codeit-fiddle .file-tab {
+    background-color: #555860;
+    color: white; }
+  .dark .QuillViewer .codeit-fiddle .file-tab.active {
+    background-color: #212434; }
+
+.QuillViewer code, .QuillEditor .ql-editor code {
+  line-height: 1.7; }
+
+.QuillViewer blockquote, .QuillEditor .ql-editor blockquote {
+  border-left: .3rem solid #6500c3;
+  margin-bottom: .5rem;
+  margin-top: .5rem;
+  padding: 0 0 0 2rem;
+  white-space: normal; }
+
+.QuillViewer hr, .QuillEditor .ql-editor hr {
+  border: #dde0ea .05rem solid; }
+
+.QuillViewer h1, .QuillEditor .ql-editor h1 {
+  font-family: 'Apple SD Gothic Neo', 'NanumSquareB', sans-serif;
+  margin-top: .5em;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 2rem;
+  letter-spacing: -0.2px; }
+  @media (min-width: 48em) {
+    .QuillViewer h1, .QuillEditor .ql-editor h1 {
+      font-size: 2.5rem;
+      letter-spacing: -0.25px; } }
+  .QuillViewer h1 code, .QuillEditor .ql-editor h1 code {
+    font-size: 2.2rem; }
+
+.QuillViewer h2, .QuillEditor .ql-editor h2 {
+  font-family: 'Apple SD Gothic Neo', 'NanumSquareB', sans-serif;
+  margin-top: .4em;
+  font-weight: 600;
+  font-size: 1.7rem;
+  letter-spacing: -0.36px; }
+  @media (min-width: 48em) {
+    .QuillViewer h2, .QuillEditor .ql-editor h2 {
+      font-size: 2rem;
+      letter-spacing: -0.43px; } }
+  .QuillViewer h2:first-child, .QuillEditor .ql-editor h2:first-child {
+    margin-top: 1rem; }
+
+.QuillViewer h3, .QuillEditor .ql-editor h3 {
+  font-family: 'Apple SD Gothic Neo', 'NanumSquareB', sans-serif;
+  margin-top: .3em;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.32px; }
+  @media (min-width: 48em) {
+    .QuillViewer h3, .QuillEditor .ql-editor h3 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      letter-spacing: -0.39px; } }
+  .QuillViewer h3:first-child, .QuillEditor .ql-editor h3:first-child {
+    margin-top: 1rem; }
+
+.QuillViewer h4, .QuillEditor .ql-editor h4 {
+  font-family: 'Apple SD Gothic Neo', 'NanumSquareBold', sans-serif;
+  font-size: 1.5rem; }
+  @media (min-width: 48em) {
+    .QuillViewer h4, .QuillEditor .ql-editor h4 {
+      font-size: 1.7rem; } }
+
+.QuillViewer p, .QuillEditor .ql-editor p {
+  white-space: pre-wrap;
+  font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+  line-height: 1.7;
+  letter-spacing: -0.3px; }
+  @media (min-width: 48em) {
+    .QuillViewer p, .QuillEditor .ql-editor p {
+      letter-spacing: -0.34px; } }
+
+.QuillViewer > pre + pre, .QuillEditor .ql-editor > pre + pre {
+  margin-top: 1rem; }
+  @media (min-width: 48em) {
+    .QuillViewer > pre + pre, .QuillEditor .ql-editor > pre + pre {
+      margin-top: 1rem; } }
+
+.QuillViewer pre, .QuillEditor .ql-editor pre {
+  position: relative;
+  max-height: 40rem;
+  font-family: 'IBM Plex Mono', 'Noto Sans KR', monospace, sans-serif;
+  line-height: 1.65;
+  font-size: 1.3rem;
+  white-space: pre;
+  color: #333236;
+  background-color: #f7f7f8;
+  background-attachment: local;
+  border-left: 1.5rem solid #eeeef1;
+  border-radius: .2rem;
+  overflow: auto;
+  padding: 1.5rem .3rem 2.5rem 1.6rem; }
+  @media (min-width: 48em) {
+    .QuillViewer pre, .QuillEditor .ql-editor pre {
+      padding: 1.5rem .3rem 2rem 2.5rem;
+      border-left: 3rem solid #eeeef1;
+      font-size: 1.7rem; } }
+  .QuillViewer pre::after, .QuillEditor .ql-editor pre::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    background-color: #ffffff;
+    width: .1rem;
+    height: 100%;
+    content: ''; }
+  .QuillViewer pre p, .QuillEditor .ql-editor pre p {
+    line-height: initial;
+    font-family: initial; }
+
+.QuillViewer table, .QuillEditor .ql-editor table {
+  max-width: 100%;
+  border-radius: .5rem;
+  border-spacing: 0;
+  border: .1rem solid #444444;
+  border-collapse: separate;
+  overflow: hidden;
+  text-align: center;
+  margin: 2rem auto 3rem auto; }
+  @media (min-width: 48em) {
+    .QuillViewer table, .QuillEditor .ql-editor table {
+      margin: 3.5rem auto 4.5rem auto; } }
+
+.QuillViewer td,
+.QuillViewer th, .QuillEditor .ql-editor td,
+.QuillEditor .ql-editor th {
+  border-left: solid #444444 .1rem;
+  border-top: solid #444444 .1rem;
+  font-size: 1.4rem;
+  padding: .3rem 1rem; }
+
+.QuillViewer th, .QuillEditor .ql-editor th {
+  border-top: none;
+  background-color: #f1f2f7;
+  font-size: 1.5rem; }
+
+.QuillViewer td:first-child,
+.QuillViewer th:first-child, .QuillEditor .ql-editor td:first-child,
+.QuillEditor .ql-editor th:first-child {
+  border-left: none; }
+
+.QuillViewer img, .QuillEditor .ql-editor img {
+  max-width: 100%;
+  vertical-align: bottom; }
+
+.QuillViewer p.ql-align-right, .QuillEditor .ql-editor p.ql-align-right {
+  margin-top: -1.5rem; }
+
+.QuillViewer .hljs, .QuillEditor .ql-editor .hljs {
+  padding: 0;
+  background-color: initial;
+  color: #333236; }
+
+.QuillViewer .hljs-number,
+.QuillViewer .hljs-class, .QuillEditor .ql-editor .hljs-number,
+.QuillEditor .ql-editor .hljs-class {
+  color: #4bad0a; }
+
+.QuillViewer .hljs-subst,
+.QuillViewer .hljs-function,
+.QuillViewer .hljs-title,
+.QuillViewer .hljs-params,
+.QuillViewer .hljs-formula, .QuillEditor .ql-editor .hljs-subst,
+.QuillEditor .ql-editor .hljs-function,
+.QuillEditor .ql-editor .hljs-title,
+.QuillEditor .ql-editor .hljs-params,
+.QuillEditor .ql-editor .hljs-formula {
+  color: #da9706; }
+
+.QuillViewer .hljs-comment, .QuillEditor .ql-editor .hljs-comment {
+  color: #a9abb7; }
+
+.QuillViewer .hljs-quote, .QuillEditor .ql-editor .hljs-quote {
+  color: #57A64A; }
+
+.QuillViewer .hljs-meta,
+.QuillViewer .hljs-meta-keyword,
+.QuillViewer .hljs-tag, .QuillEditor .ql-editor .hljs-meta,
+.QuillEditor .ql-editor .hljs-meta-keyword,
+.QuillEditor .ql-editor .hljs-tag {
+  color: #837373; }
+
+.QuillViewer .hljs-variable,
+.QuillViewer .hljs-template-variable, .QuillEditor .ql-editor .hljs-variable,
+.QuillEditor .ql-editor .hljs-template-variable {
+  color: #BD63C5; }
+
+.QuillViewer .hljs-attr, .QuillViewer .hljs-attribute, .QuillViewer .hljs-builtin-name, .QuillEditor .ql-editor .hljs-attr, .QuillEditor .ql-editor .hljs-attribute, .QuillEditor .ql-editor .hljs-builtin-name {
+  color: #005684; }
+
+.QuillViewer :not(pre) > code, .QuillEditor .ql-editor :not(pre) > code {
+  font-family: 'IBM Plex Mono', 'Noto Sans KR', monospace, sans-serif;
+  border-radius: .3rem;
+  color: #428839;
+  font-weight: 600;
+  margin-right: .1rem; }
+
+.QuillViewer.ql-blank::before, .QuillEditor .ql-editor.ql-blank::before {
+  font-style: normal; }
+
+.QuillViewer ul,
+.QuillViewer ol, .QuillEditor .ql-editor ul,
+.QuillEditor .ql-editor ol {
+  -webkit-padding-start: 2em;
+          padding-inline-start: 2em;
+  white-space: normal; }
+
+.QuillViewer li, .QuillEditor .ql-editor li {
+  list-style: inherit;
+  line-height: normal;
+  font-weight: 500; }
+
+.QuillViewer li + li, .QuillEditor .ql-editor li + li {
+  margin-top: 1rem; }
+
+.QuillViewer a, .QuillEditor .ql-editor a {
+  text-decoration: underline;
+  color: #333236; }
+
+.QuillViewer {
+  line-height: 2.8rem; }
+  .QuillViewer .ql-syntax {
+    font-family: 'IBM Plex Mono', 'Noto Sans KR', monospace, sans-serif; }
+  .QuillViewer > p {
+    white-space: pre-wrap; }
+  .QuillViewer__footnoteContainer {
+    white-space: initial;
+    position: relative; }
+    .QuillViewer__footnoteContainer h1 {
+      display: inline-block; }
+  @media (min-width: 48em) {
+    .QuillViewer__footnoteBlock:hover .QuillViewer__footnotePopover,
+    .QuillViewer__footnoteBlock:hover .QuillViewer__footnotePopoverTip {
+      display: block; } }
+  .QuillViewer__footnoteBlock.up.right .QuillViewer__footnotePopover {
+    transform: translate(-5%, -100%); }
+  .QuillViewer__footnoteBlock.up.left .QuillViewer__footnotePopover {
+    transform: translate(-85%, -100%); }
+  .QuillViewer__footnoteBlock.down.right .QuillViewer__footnotePopover {
+    transform: translate(-5%, 0%); }
+  .QuillViewer__footnoteBlock.down.left .QuillViewer__footnotePopover {
+    transform: translate(-85%, 0%); }
+  .QuillViewer__footnoteBlock.down .QuillViewer__footnotePopoverTip {
+    top: 1em;
+    background-image: linear-gradient(135deg, #dde0ea 50%, transparent 50%);
+    background-color: transparent;
+    box-shadow: -0.3rem -0.3rem 0.5rem 0 rgba(64, 61, 70, 0.05); }
+  .QuillViewer__footnoteBlock.down .QuillViewer__footnotePopover {
+    top: 1.3em; }
+  .QuillViewer .QuillViewer__footnoteIndex {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: -1rem;
+    color: #33cccc !important; }
+  .QuillViewer__footnotePopover {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: -.6em;
+    transform: translate(-50%, -100%);
+    width: 30rem;
+    border-radius: .4rem;
+    background-color: #ffffff;
+    box-shadow: 0 0 1rem 0 rgba(64, 61, 70, 0.1);
+    overflow: hidden;
+    z-index: 3; }
+  .QuillViewer__footnotePopoverTip {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: -1em;
+    width: .7em;
+    height: .7em;
+    background-color: #ffffff;
+    transform: translateX(-50%) rotate(45deg);
+    box-shadow: 0.3rem 0.3rem 0.5rem 0 rgba(64, 61, 70, 0.05); }
+  .QuillViewer__footnoteTitle {
+    display: block;
+    height: 3.2rem;
+    line-height: 3.4rem;
+    padding-left: 2rem;
+    color: #787980;
+    font-size: 1.2rem; }
+  .QuillViewer__footnoteContent {
+    display: block;
+    padding: 1rem 2rem 1.3rem;
+    color: #333236;
+    font-size: 1.4rem; }
+  .QuillViewer .ql-align-center {
+    text-align: center; }
+  .QuillViewer .ql-align-justify {
+    text-align: justify; }
+  .QuillViewer .ql-align-right {
+    text-align: right; }
+  .QuillViewer .video_responsive_wrapper {
+    margin-bottom: 2rem; }
+    .QuillViewer .video_responsive_wrapper #wrapper {
+      margin: auto; }
+    .QuillViewer .video_responsive_wrapper > iframe {
+      width: 100%;
+      height: 100%;
+      border: none; }
+
+.dark .QuillViewer a {
+  color: #79c1ff; }
+
+.dark .QuillViewer blockquote {
+  border-left: .3rem solid #e0b4fa; }
+
+.dark .QuillViewer hr {
+  border: #626682 .05rem solid; }
+
+.dark .QuillViewer table {
+  border: .1rem solid #212434; }
+
+.dark .QuillViewer td,
+.dark .QuillViewer th {
+  border-left: solid #212434 .1rem;
+  border-top: solid #212434 .1rem; }
+
+.dark .QuillViewer th {
+  background-color: #2a2c3d; }
+
+.dark .QuillViewer pre {
+  background-color: #212434;
+  color: #ffffff;
+  border-left: 1.5rem solid #272a3a; }
+  @media (min-width: 48em) {
+    .dark .QuillViewer pre {
+      border-left: 3rem solid #272a3a; } }
+  .dark .QuillViewer pre::after {
+    background-color: #5f616d; }
+  .dark .QuillViewer pre code {
+    width: 100%; }
+
+.dark .QuillViewer .hljs {
+  color: #ffffff; }
+
+.dark .QuillViewer .hljs-attr, .dark .QuillViewer .hljs-attribute, .dark .QuillViewer .hljs-builtin-name {
+  color: #2785b8; }
+
+.QuillViewer__footnoteBlock {
+  margin-top: -.4rem;
+  display: inline-block;
+  vertical-align: text-bottom; }
+
+.QuillViewer__footnoteBlock.down {
+  z-index: 4; }
+
+.QuillViewer__footnoteTitle__index {
+  color: #33cccc; }
+
+.QuillViewer__footnotePopoverTip {
+  z-index: 3; }
+
+.QuillViewer__footnotePopover .QuillViewer__footnoteTitle {
+  font-size: 1.2rem;
+  color: #333236;
+  border-bottom: .1rem solid #dde0ea; }
+
+.QuillViewer__footnotePopover .QuillViewer__footnoteContent {
+  font-size: 1.4rem; }
+
+.dark .QuillViewer__footnoteBlock.down .QuillViewer__footnotePopoverTip {
+  background-image: none; }
+
+.dark .down .QuillViewer__footnotePopoverTip {
+  background-color: #454759; }
+
+.dark .QuillViewer__footnoteTitle__index {
+  color: #33cccc; }
+
+.dark .QuillViewer__footnotePopover {
+  background-color: #454759;
+  box-shadow: 0 0.4rem 2rem 0 rgba(27, 22, 30, 0.41);
+  color: #ffffff; }
+  .dark .QuillViewer__footnotePopover .QuillViewer__footnoteTitle {
+    color: #dde0ea;
+    border-bottom: .1rem solid #1c1e28; }
+  .dark .QuillViewer__footnotePopover .QuillViewer__footnoteContent {
+    color: #ffffff; }
+
+.LessonViewer .QuillViewer, .LessonViewer .QuillEditor, .LessonBuilderBody .QuillViewer, .LessonBuilderBody .QuillEditor, .AssessmentViewer .QuillViewer, .AssessmentViewer .QuillEditor {
+  /************************
+      h2 {
+        ...
+      }
+
+      h1 + h2 {
+        ...
+      }
+    *************************/ }
+  .LessonViewer .QuillViewer p, .LessonViewer .QuillEditor p, .LessonBuilderBody .QuillViewer p, .LessonBuilderBody .QuillEditor p, .AssessmentViewer .QuillViewer p, .AssessmentViewer .QuillEditor p {
+    white-space: pre-wrap; }
+  .LessonViewer .QuillViewer > *:first-child, .LessonViewer .QuillEditor > *:first-child, .LessonBuilderBody .QuillViewer > *:first-child, .LessonBuilderBody .QuillEditor > *:first-child, .AssessmentViewer .QuillViewer > *:first-child, .AssessmentViewer .QuillEditor > *:first-child {
+    margin-top: 0; }
+  .LessonViewer .QuillViewer h1, .LessonViewer .QuillEditor h1, .LessonBuilderBody .QuillViewer h1, .LessonBuilderBody .QuillEditor h1, .AssessmentViewer .QuillViewer h1, .AssessmentViewer .QuillEditor h1 {
+    margin-top: 6rem; }
+  .LessonViewer .QuillViewer h2, .LessonViewer .QuillEditor h2, .LessonBuilderBody .QuillViewer h2, .LessonBuilderBody .QuillEditor h2, .AssessmentViewer .QuillViewer h2, .AssessmentViewer .QuillEditor h2 {
+    margin-top: 4.5rem; }
+  .LessonViewer .QuillViewer h1 + h2, .LessonViewer .QuillEditor h1 + h2, .LessonBuilderBody .QuillViewer h1 + h2, .LessonBuilderBody .QuillEditor h1 + h2, .AssessmentViewer .QuillViewer h1 + h2, .AssessmentViewer .QuillEditor h1 + h2 {
+    margin-top: 2.5rem; }
+  .LessonViewer .QuillViewer hr + h2, .LessonViewer .QuillEditor hr + h2, .LessonBuilderBody .QuillViewer hr + h2, .LessonBuilderBody .QuillEditor hr + h2, .AssessmentViewer .QuillViewer hr + h2, .AssessmentViewer .QuillEditor hr + h2 {
+    margin-top: 6rem; }
+  .LessonViewer .QuillViewer h3, .LessonViewer .QuillEditor h3, .LessonBuilderBody .QuillViewer h3, .LessonBuilderBody .QuillEditor h3, .AssessmentViewer .QuillViewer h3, .AssessmentViewer .QuillEditor h3 {
+    margin-top: 3rem; }
+  .LessonViewer .QuillViewer h1 + h3,
+  .LessonViewer .QuillViewer h2 + h3, .LessonViewer .QuillEditor h1 + h3,
+  .LessonViewer .QuillEditor h2 + h3, .LessonBuilderBody .QuillViewer h1 + h3,
+  .LessonBuilderBody .QuillViewer h2 + h3, .LessonBuilderBody .QuillEditor h1 + h3,
+  .LessonBuilderBody .QuillEditor h2 + h3, .AssessmentViewer .QuillViewer h1 + h3,
+  .AssessmentViewer .QuillViewer h2 + h3, .AssessmentViewer .QuillEditor h1 + h3,
+  .AssessmentViewer .QuillEditor h2 + h3 {
+    margin-top: 2rem; }
+  .LessonViewer .QuillViewer ol, .LessonViewer .QuillEditor ol, .LessonBuilderBody .QuillViewer ol, .LessonBuilderBody .QuillEditor ol, .AssessmentViewer .QuillViewer ol, .AssessmentViewer .QuillEditor ol {
+    margin-top: 3rem; }
+  .LessonViewer .QuillViewer li > ol, .LessonViewer .QuillEditor li > ol, .LessonBuilderBody .QuillViewer li > ol, .LessonBuilderBody .QuillEditor li > ol, .AssessmentViewer .QuillViewer li > ol, .AssessmentViewer .QuillEditor li > ol {
+    margin-top: 1rem; }
+  .LessonViewer .QuillViewer ul, .LessonViewer .QuillEditor ul, .LessonBuilderBody .QuillViewer ul, .LessonBuilderBody .QuillEditor ul, .AssessmentViewer .QuillViewer ul, .AssessmentViewer .QuillEditor ul {
+    margin-top: 3rem; }
+  .LessonViewer .QuillViewer li > ul, .LessonViewer .QuillEditor li > ul, .LessonBuilderBody .QuillViewer li > ul, .LessonBuilderBody .QuillEditor li > ul, .AssessmentViewer .QuillViewer li > ul, .AssessmentViewer .QuillEditor li > ul {
+    margin-top: 1rem; }
+  .LessonViewer .QuillViewer pre, .LessonViewer .QuillEditor pre, .LessonBuilderBody .QuillViewer pre, .LessonBuilderBody .QuillEditor pre, .AssessmentViewer .QuillViewer pre, .AssessmentViewer .QuillEditor pre {
+    margin-top: 3rem; }
+  .LessonViewer .QuillViewer pre + pre, .LessonViewer .QuillEditor pre + pre, .LessonBuilderBody .QuillViewer pre + pre, .LessonBuilderBody .QuillEditor pre + pre, .AssessmentViewer .QuillViewer pre + pre, .AssessmentViewer .QuillEditor pre + pre {
+    margin-top: 1.5rem; }
+  .LessonViewer .QuillViewer p, .LessonViewer .QuillEditor p, .LessonBuilderBody .QuillViewer p, .LessonBuilderBody .QuillEditor p, .AssessmentViewer .QuillViewer p, .AssessmentViewer .QuillEditor p {
+    margin-top: 2rem; }
+  .LessonViewer .QuillViewer pre + p,
+  .LessonViewer .QuillViewer blockquote + p,
+  .LessonViewer .QuillViewer ol + p,
+  .LessonViewer .QuillViewer ul + p, .LessonViewer .QuillEditor pre + p,
+  .LessonViewer .QuillEditor blockquote + p,
+  .LessonViewer .QuillEditor ol + p,
+  .LessonViewer .QuillEditor ul + p, .LessonBuilderBody .QuillViewer pre + p,
+  .LessonBuilderBody .QuillViewer blockquote + p,
+  .LessonBuilderBody .QuillViewer ol + p,
+  .LessonBuilderBody .QuillViewer ul + p, .LessonBuilderBody .QuillEditor pre + p,
+  .LessonBuilderBody .QuillEditor blockquote + p,
+  .LessonBuilderBody .QuillEditor ol + p,
+  .LessonBuilderBody .QuillEditor ul + p, .AssessmentViewer .QuillViewer pre + p,
+  .AssessmentViewer .QuillViewer blockquote + p,
+  .AssessmentViewer .QuillViewer ol + p,
+  .AssessmentViewer .QuillViewer ul + p, .AssessmentViewer .QuillEditor pre + p,
+  .AssessmentViewer .QuillEditor blockquote + p,
+  .AssessmentViewer .QuillEditor ol + p,
+  .AssessmentViewer .QuillEditor ul + p {
+    margin-top: 3rem; }
+  .LessonViewer .QuillViewer blockquote, .LessonViewer .QuillEditor blockquote, .LessonBuilderBody .QuillViewer blockquote, .LessonBuilderBody .QuillEditor blockquote, .AssessmentViewer .QuillViewer blockquote, .AssessmentViewer .QuillEditor blockquote {
+    margin-top: 3rem; }
+  .LessonViewer .QuillViewer p.ql-align-right, .LessonViewer .QuillEditor p.ql-align-right, .LessonBuilderBody .QuillViewer p.ql-align-right, .LessonBuilderBody .QuillEditor p.ql-align-right, .AssessmentViewer .QuillViewer p.ql-align-right, .AssessmentViewer .QuillEditor p.ql-align-right {
+    margin-top: 1rem; }
+  .LessonViewer .QuillViewer hr, .LessonViewer .QuillEditor hr, .LessonBuilderBody .QuillViewer hr, .LessonBuilderBody .QuillEditor hr, .AssessmentViewer .QuillViewer hr, .AssessmentViewer .QuillEditor hr {
+    margin-top: 4.5rem; }
+
+.S .LessonViewer .QuillViewer > *:first-child, .S .LessonViewer .QuillEditor > *:first-child {
+  margin-top: 0; }
+
+.S .LessonViewer .QuillViewer h1, .S .LessonViewer .QuillEditor h1 {
+  font-size: 2rem; }
+
+.S .LessonViewer .QuillViewer h2, .S .LessonViewer .QuillEditor h2 {
+  font-size: 1.7rem; }
+
+.S .LessonViewer .QuillViewer h3, .S .LessonViewer .QuillEditor h3 {
+  font-size: 1.5rem; }
+
+.S .LessonViewer .QuillViewer p, .S .LessonViewer .QuillEditor p {
+  margin-top: 1.5rem; }
+
+.ql-editor * {
+  margin: 0 !important; }
+

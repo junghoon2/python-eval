@@ -1,0 +1,33 @@
+/* css 선택자, 웹페이지 안에서 추출할 데이터를 선택하는 경우 사용 */
+
+/* or 연산, 여러 태그 선택, 쉼표 사용 */
+h2, p{
+  color: royalblue;
+  text-align: center;
+}
+
+/* AND 연산, b 태그 이면서 codeit class를 가지는 속성 선택
+ 붙혀서 쓰면 된다. b tag이고 codeit class 선택 - 2개 붙혀 준다  */
+b.codeit{
+  color: purple;
+}
+
+/* 태그 2개 붙혀 쓰는 것은 안됨. 태그 2개가 있는 건 없음 */
+
+/* h2p{
+} */
+
+/* 중첩 태그는 띄워쓰기 이용, li 아래에 있는 i 태그 사용 */
+li i{
+  color: red;
+}
+
+/* 직속 자식만 선택. > 부등호 사용, li 태그 중에서 li 바로 밑에 있는 i 태그만 선택 */
+li > i {
+  color: aqua;
+}
+
+/* * 별표는 모든 태그를 의미 */
+/* li > * {
+
+} */

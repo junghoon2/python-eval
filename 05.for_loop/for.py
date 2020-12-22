@@ -1,14 +1,17 @@
-# my_list = [2, 5, 6, 10, 12]
+my_list = [2, 5, 6, 10, 12]
 
-# for number in my_list:
-#     print(number)
+# for 선언하기
+# for, in 
+for number in my_list:
+    print(number)
 
-# for i in range(1, 10):
-#     print(i)
+# range 함수
+for i in range(1, 10):
+    print(i)
 
-# for e in range(10, 15):
-#     print(e)
+for e in range(10, 15):
+    print(e)
 
-import string
+# import string
 
-print(string.ascii_lowercase[:15])
+# print(string.ascii_lowercase[:15])

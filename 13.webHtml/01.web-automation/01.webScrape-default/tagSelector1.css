@@ -1,0 +1,30 @@
+/* css 코드는 css 선택자 + style 코드로 구성 */
+
+/* css 선택자는 숫자는 안된다 */
+
+
+/* 태그 이름은 기호 없이 바로 태그 이름 선택 */
+h2 {  
+  color: blueviolet; 
+  text-align:center;
+}
+
+p {
+  color: white; 
+  background-color: lightblue;
+}
+
+li {
+  color: gray; 
+}
+
+/* id는 순서이니 # 선택 */
+#first-h2 {   
+  color: royalblue; 
+  text-align:center;
+}
+
+/* class 선택은 #이 아니라 . 사용 */
+.beginner {   
+  color: orchid; 
+}
