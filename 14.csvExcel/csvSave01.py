@@ -12,9 +12,10 @@ csv_writer = csv.writer(csv_file)
 # 헤더 행 추가
 csv_writer.writerow(['지점 이름', '주소', '전화번호'])
 
-branches = soup.select('div.branch')
+# branches = soup.select('div.branch')
 
-for branch in branches:
+# for branch in branches:
+for branch in soup.select('div.branch'):
   row = [
       branch.select_one('p.city').get_text(),
       branch.select_one('p.address').get_text(),
