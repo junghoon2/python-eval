@@ -12,8 +12,10 @@ soup = BeautifulSoup(response.text, 'html.parser')
 branch_infos =[]
 
 branch_tags = soup.select('div.branch')
+# branch_tags = soup.tagname('div.branch')
 
 for branch_tag in branch_tags:
+  # name = branch_tag.select_one('p.city').get_text()
   name = branch_tag.select_one('p.city').get_text()
   address = branch_tag.select_one('p.address').get_text()
   phone = branch_tag.select_one('span.phoneNum').get_text()
