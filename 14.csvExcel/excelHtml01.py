@@ -19,8 +19,8 @@ for year in range(2010, 2019):
       # 원하는 tag를 가지는 text 선택
 
       # select 이름으로 선택하니 '' 따옴표 꼭 넣어준다. 
-      # for tag in soup.select('tr.row'):
-      for tag in soup.select('tr')[1:]:
+      for tag in soup.select('tr.row')[1:]:
+      # for tag in soup.select('tr')[1:]:
         # tags = tag.select('td')
         # debugging을 빨리 할 줄도 알아야 하는데
         channel = tag.select_one('td.channel').get_text()
