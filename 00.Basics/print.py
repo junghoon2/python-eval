@@ -12,3 +12,4 @@ print(7 > 3)
 print(3 > 8)
 
 # List, tuple 
+print("출력:", "A")

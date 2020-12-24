@@ -15,3 +15,6 @@ for e in range(10, 15):
 # import string
 
 # print(string.ascii_lowercase[:15])
+
+for i in ["A", "B", "C"]:
+    print(i)

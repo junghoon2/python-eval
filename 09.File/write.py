@@ -1,5 +1,14 @@
 # 파일에 내용 쓰기
 
-with open("data/write01.txt", "a") as f:
-    f.write("Hello world\n")  # 줄 바꿈 필요
-    f.write("This is my first 'Write file example'\n")  # 덮어쓰기 된다.
+# 파일 지정
+# open, a, write 
+# with open("data/매수종목1.txt", "a") as f:
+#     f.write("005930\n")  # 줄 바꿈 필요
+#     f.write("005380\n")  # 줄 바꿈 필요
+#     f.write("035420\n")  # 줄 바꿈 필요
+
+with open("data/매수종목2.txt", "a") as f:
+    f.write("005930 삼성전자\n")
+    f.write("005380 현대차\n") 
+    f.write("035420 NAVER\n")
+    f.close()

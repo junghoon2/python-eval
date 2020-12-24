@@ -1,4 +1,5 @@
 # dictionary basics
+
 # key-value 형태로 선언, 순서가 없을 듯 
 # version 3.6부터 key가 ordered 지원
 
@@ -12,6 +13,7 @@ my_dict = {
 # 호출하기는 list와 거의 동일하네 
 print(my_dict[4])
 
+# 리스트로 key, value 저장 가능
 my_dict[9] = 81
 
 print(my_dict)
