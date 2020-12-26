@@ -52,3 +52,22 @@ for i in [1, 2, 3]:
     # print('3 ' + '* ' + str(i))
     # print('3 x ' + str(i))
     print('3 x ' + str(i) +' = ' + str(3*i))
+
+li = ["a", "b", "c", "d"]
+# li = ["가", "나", "다", "라"]
+
+# 리스트 slicing
+# for i in li[1:]:
+#     # if j != 0
+#     # if li[j]
+#     print(i)
+
+# 0, 2 번째 list 출력
+# li = li[::2]
+
+for i in li[: :2]:
+    print(i)
+
+# 리스트 거꾸로 출력
+for i in li[: : -1]:
+    print(i)
