@@ -1,3 +1,8 @@
+# 리스트 합 출력하기
+nums = [1, 2, 3, 4, 5]
+print(sum(nums))
+
+
 # 자리수 합 리턴
 #a = 0  # 초기 값
 def sum_digit(num):
