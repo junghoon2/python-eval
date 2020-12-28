@@ -2,15 +2,17 @@
 # 3개 함수 사용
 # find_element_by_css_selector, click, send_keys
 
-# Selenium 임포트
+import time
 from selenium import webdriver
+from selenium.webdriver.support.ui import Select
 
-# 크롬 드라이버 생성 - 경로 설정 필요 없음
+# 웹페이지 저장
 driver = webdriver.Chrome()
 driver.implicitly_wait(3)
+url = "https://workey.codeit.kr/costagram/index"
 
-# 사이트 접속하기
-driver.get('https://workey.codeit.kr/costagram/index')
+driver.get(url)
+time.sleep(1)
 
 # css 선택자 선택
 # click 하면 click 실행해서 화면까지 뜬다

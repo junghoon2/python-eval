@@ -31,10 +31,13 @@ propo_rep_select.select_by_value('5049')
 # '검색'버튼 클릭
 driver.find_element_by_css_selector('#spanSubmit').click()
 
-# 국회의원 정보 상위 태그 선택
-# 각 태그 별 rank, name 선택
+# 국회의원 정보 상위 태그 선택 후 순위, 이름 정보 각각 선택
+# 리스트 타입으로 for 반복문 지정
+
+# index로 element 선택 가능
 for element in driver.find_elements_by_css_selector('tbody tr'):
   rank = element.find_element_by_css_selector('td.alignC').text
+  # index 2번 선택 가능
   # 특수문자, 새로운 행 \n 기준으로 split 가능
   name = element.find_elements_by_css_selector('td.alignC')[2].text.split('\n')[0]
 
