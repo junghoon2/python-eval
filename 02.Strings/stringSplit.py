@@ -8,3 +8,12 @@ print(분기.split("(E")[0])
 상장주식수 = "5,969,782,550"
 
 print(int(상장주식수.replace(',', '')))
+
+a = "hello world"
+print(a.split(' '))
+
+ticker = "btc_krw"
+print(ticker.split('_'))
+
+date = "2020-05-01"
+print(date.split('-'))
