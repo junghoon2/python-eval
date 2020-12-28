@@ -23,3 +23,26 @@ num_3 = round(num_1 / num_2, 2)
 print("{0} 나누기 {1}는 {2} 입니다.".format(num_1, num_2, num_3))
 print("{0} 나누기 {1}는 {2:.3f} 입니다.".format(num_1, num_2, num_1/num_2))
 print("{0} 나누기 {1}는 {2:.7f} 입니다.".format(num_1, num_2, num_1/num_2))
+
+name1 = "김민수" 
+age1 = 10
+name2 = "이철희"
+age2 = 13
+
+# {0} 해도 되고 생략해도 된다.
+print("이름: {} 나이: {}".format(name1, age1))
+print("이름: {0} 나이: {1}".format(name1, age1))
+print("이름: {} 나이: {}".format(name2, age2))
+
+# F-string 사용 가능
+# 별로 눈에 들어오지는 않는다.
+# .format이 가장 직관적인 듯
+name="Jerry"
+age=44
+
+print(f"내 이름은 {name}이고 나이는 {age}입니다.")
+
+print(f"이름: {name1} 나이: {age1}")
+print(f"이름: {name2} 나이: {age2}")
+
+

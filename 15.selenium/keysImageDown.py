@@ -1,6 +1,8 @@
 import time
 import requests
 from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+
 
 # 웹 드라이버 설정
 driver = webdriver.Chrome()
@@ -51,6 +53,9 @@ for post in posts:
     # 닫기 버튼 클릭
     driver.find_element_by_css_selector('.close-btn').click()
     time.sleep(0.5)
+
+    #search 변수에 저장된 곳에 엔터를 입력
+    post.send_keys(Keys.ENTER)
 
 driver.quit()
 
