@@ -1,13 +1,13 @@
 # Tuple type 선언하기
 # 순서는 있지만 수정이 불가능한 변수 type
 
-# { }는 set라고 한다.. 
+# { }는 set
 # a = {3, 45, 8}  
 
 # tuple은 ( ), 괄호 사용한다. 
 # 제일 많이 사용하는 (), 괄호를 사용하네.
 a = (3, 4)
-b = [3, 4, 55]
+b = [3, 4, 55] # list
 
 print(type(a))
 print(a)
@@ -15,7 +15,7 @@ print(a)
 # immutable 하다
 # a.
 
-# b같은 list에서 지원하는 append, remove 등 다양한 메소드들을 지원하지 않는다.
+# b같은 list type에서 지원하는 append, remove 등 다양한 메소드들을 지원하지 않는다.
 # b.
 
 my_tuple =()
@@ -52,8 +52,8 @@ t = ('A', 'b', 'c')
 # upper 등이 가능한가, upper는 string type에 적용된다.
 print(t[0].upper())
 
-# tuple을 리스트로 변환
-# 쉽게 변환 가능하네.
+# tuple 리스트로 변환
+# 쉽게 변환 가능
 interest = ('삼성전자', 'LG전자', 'SK Hynix')
 print(list(interest))
 

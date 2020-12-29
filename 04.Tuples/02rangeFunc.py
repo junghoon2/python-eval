@@ -12,4 +12,5 @@ print(data)
 data = list(range(2, 100, 2))
 print(data)
 
-print(range(2, 100, 2))
+x = range(2, 100, 2)
+print(x)

@@ -10,7 +10,33 @@ my_dict = {
     4: 9
 }
 
-# 호출하기는 list와 거의 동일하네 
+temp = {}
+print(temp)
+
+
+ice = {'메로나': 1000,
+       '폴로포': 1200,
+       '빵빠레': 1800,
+       '죠스바': 1200,
+       '월드콘': 1500}
+
+# Element 삭제
+ice.pop('메로나')
+print(ice)
+
+# pop, del 두가지 가능
+# list에 가능한 remove는 안되네
+del ice['폴로포']
+print(ice)
+
+# ice.remove(0)
+
+# pop index로 안되네
+ice.pop(0)
+print(ice)
+
+
+# index, 호출하기는 list와 거의 동일하네 
 print(my_dict[4])
 
 # 리스트로 key, value 저장 가능
