@@ -12,3 +12,12 @@
 # >>> "abc" < "b"
 # True
 
+print(3 == 5)
+print(3 != 5)
+
+
+print ((3 == 3) and (4 != 3))
+print ((3 != 3) or (4 != 3))
+
+# print (4 => 3)
+print (4 >= 3)

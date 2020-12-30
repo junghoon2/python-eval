@@ -1,9 +1,0 @@
-# if 기본 예제
-# Indentation 4개, 조건 문장 끝에 : 사용
-
-temperature = 25
-
-if temperature < 18:
-    print("자켓을 입는다.")
-else:
-    print("자켓을 입지 않는다.")
