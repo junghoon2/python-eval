@@ -12,4 +12,4 @@ high_prices = [150, 300, 430, 880, 1000]
 
 for i in range(len(low_prices)):
   print(high_prices[i] - low_prices[i])
-  
+

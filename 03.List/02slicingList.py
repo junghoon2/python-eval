@@ -3,6 +3,22 @@
 price = ['20180728', 100, 130, 140, 150, 160, 170]
 print(price[1:])
 
+# 거꾸로 출력
+apart = [ [101, 102], [201, 202], [301, 302] ]
+
+for i in range(len(apart)):
+  for j in apart[-(i + 1)]:
+      print(j, '호')
+
+for row in apart[::-1]:
+  for col in row:
+    print(col, '호')
+
+for row in apart[::-1]:
+  for col in row[::-1]:
+    print(col, '호')
+
+
 # 2씩 증가, 짝수만 출력
 nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 print(nums[::2])

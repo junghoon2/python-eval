@@ -4,6 +4,11 @@
 
 my_list = [2, 5, 6, 10, 12]
 
+# 반복문에 들어가는 변수는 list 타입이면 가능
+price_list = [32100, 32150, 32000, 32500]
+for i in price_list:
+  print(i)
+  
 # 대괄호 가능한데, .. 연속은 안된다.
 for i in {1, 3}:
 # for i in {1..3}:
