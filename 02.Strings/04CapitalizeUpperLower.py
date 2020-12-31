@@ -9,3 +9,6 @@ string = "hello"
 print(string.capitalize())
 
 
+리스트 = ['dog', 'cat', 'parrot']
+for s in 리스트:
+  print(s.capitalize())

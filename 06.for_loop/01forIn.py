@@ -4,6 +4,9 @@
 
 my_list = [2, 5, 6, 10, 12]
 
+for 변수 in ["A", "B", "C"]:
+  print(변수)
+
 # for, in 
 for number in my_list:
     print(number)
@@ -38,20 +41,6 @@ for i in ["김밥", "라면", "튀김"]:
     # print("오늘의 메뉴: " + i)
     print("오늘의 메뉴 : {}".format(i))
 
-# 문자열 길이 출력
-for i in ["SK하이닉스", "삼성전자", "LG전자"]:
-    print(len(i))
-
-# 문자와 문자열 길이 같이 출력
-for i in ["dog", "cat", "parrot"]:
-    print(i + ' ' + str(len(i)))
-
-# 숫자를 문자열로 변환 후 출력 
-# 숫자 문자 이어붙혀서 출력
-for i in [1, 2, 3]:
-    # print('3 ' + '* ' + str(i))
-    # print('3 x ' + str(i))
-    print('3 x ' + str(i) +' = ' + str(3*i))
 
 li = ["a", "b", "c", "d"]
 # li = ["가", "나", "다", "라"]
@@ -71,3 +60,7 @@ for i in li[: :2]:
 # 리스트 거꾸로 출력
 for i in li[: : -1]:
     print(i)
+
+# print, 쉼표, 2개 변수를 이어 붙힌다.
+for 메뉴 in ["김밥", "라면", "튀김"]:
+    print("오늘의 메뉴:", 메뉴)

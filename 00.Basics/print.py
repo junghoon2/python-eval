@@ -33,6 +33,12 @@ print("naver", "kakao", "sk", "samsung")
 print("naver", "kakao", "sk", "samsung", sep="; ")
 print("naver", "kakao", "sk", "samsung", sep="/")
 
+# 문자와 문자열 길이 같이 출력
+# print 함수에서 문자열 더하기 보다는 쉼표가 낫다. 
+for i in ["dog", "cat", "parrot"]:
+    print(i + ' ' + str(len(i)))
+    print(i, len(i))
+    
 # end, 줄바꿈 수정하기
 print("first");print("second")
 print("first", "second", end="")
