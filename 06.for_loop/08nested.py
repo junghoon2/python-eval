@@ -67,3 +67,39 @@ for row in ohlc[1]:
 
 # 새로운 게 나오면 외우려 하지 말고,
 # 멈추어 서서(설사 이해가 되지 않는다고 해도) 충분히 생각해 본다.
+
+# 150 이상인 경우만 출력
+for data in ohlc[1:]:
+  if data[-1] > 150:
+    print(data[-1])
+
+# 종가가 시가보다 큰 경우에만 출력
+for data in ohlc[1:]:
+  if data[-1] >= data[0]:
+    print(data[-1])
+
+volatility =[]
+# 변동폭 변수 저장
+for data in ohlc[1:]:
+  volatility.append(abs(data[2] - data[1]))
+
+print(volatility)
+
+ohlc = [["open", "high", "low", "close"],
+        [100, 110, 70, 100],
+        [200, 210, 180, 190],
+        [300, 310, 300, 310]]
+
+volatility =[]
+
+# 종가가 시가보다 높은 날의 변동성
+for data in ohlc[1:]:
+  if data[-1] > data[0]:
+    volatility.append(data[1] - data[2])
+
+print(volatility)
+
+# 시가에 매수해서 종가에 매도할 경우 수익금
+profits =[]
+# list 합 계산
+
