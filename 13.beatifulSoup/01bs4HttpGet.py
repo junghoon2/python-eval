@@ -1,13 +1,16 @@
 import requests
-from bs4 import BeautifulSoup
+import urllib.request as ur
+from bs4 import BeautifulSoup as bs
 
-# 비트코인 시세
-btc = requests.get("https://api.bithumb.com/public/ticker/").json()['data']
-print(btc)
-
-response = requests.get("https://workey.codeit.kr/orangebottle/index")
 # 이 코드는 계속 변경되지 않는다.
-soup = BeautifulSoup(response.text, 'html.parser')
+url = "https://quotes.toscrape.com/"
+
+# urlopen 메소드 사용
+# html = ur.urlopen(url)
+# soup = bs(html.read(), 'html.parser')
+
+soup = bs(ur.urlopen(url).read(), 'html.parser')
+print(soup.select('tr'))
 
 # index_pages = response.text
 

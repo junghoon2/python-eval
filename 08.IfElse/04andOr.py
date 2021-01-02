@@ -21,3 +21,14 @@ else:
 # 괄호 사용 가능
 # if 0 <= int(뒷자리[1:3]) <= 8:
 #     print("서울입니다.")
+
+# 3개 숫자 중 가장 큰 숫자 출력
+def print_max(i, j, k):
+  if i >= j and i >= k:
+    print(i)
+  elif j >= k:
+    print(j)
+  else:
+    print(k)
+
+print_max(3, 4, 5)

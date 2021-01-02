@@ -9,4 +9,45 @@ def hello(name, age):
   print(name) # print 로 문자열을 받으면 그걸 출력한다. 
   print(age + 10) # age 를 자동으로 integer로 받아들이네 
 
-hello(20, 44)
+hello("jerry", 44)
+
+# string 으로 받네
+def 함수(문자열) :
+    print(문자열)
+
+함수("안녕")
+함수("Hi")
+함수(10)
+
+# parameter를 변환 또는 지정 가능하겠지
+
+def print_with_smile(s) :
+  print(s + ":D")
+  print(s, ":D")
+
+print_with_smile("Jerry") 
+
+# 상환가 출력 함수
+def print_upper_price(price):
+  print(price * 1.3)
+
+# 2개의 입력값 합하는 함수
+# 그냥 내장 함수 sum 사용하면 되지
+def print_sum(i, j):
+  print(i + j)
+
+print_sum(9, 3)
+
+print(3/4)
+
+# 합, 차, 곱, 나눗셈 함수 
+def print_arithmetic_operation(i, j):
+  print("{} + {} = {}".format(i, j, i+j))
+  print("{} - {} = {}".format(i, j, i-j))
+  print("{} * {} = {}".format(i, j, i*j))
+  print("{} / {} = {}".format(i, j, i/j))
+# 이게 더 깔끔하기도 한 것 같고
+  print(f"{i} / {j} = {i/j}")
+
+print_arithmetic_operation(3, 4)
+
