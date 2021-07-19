@@ -1,3 +1,6 @@
+import os
+import re
+
 # 특정 등장 인물의 대사만 모으기
 os.chdir(r'/home/spkr/03.Python/09.regularExpress')
 
