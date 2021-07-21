@@ -43,3 +43,27 @@ print(joey[:10])
 
 f.write(joey)
 f.close()
+
+# 인물만 추출하기
+w = '''Phoebe: Just, 'cause, I don't want her to go through what I went through with Carl- oh!
+
+Monica: Okay, everybody relax. This is not even a date. It's just two people going out to dinner and- not having sex.
+
+Chandler: Sounds like a date to me. Phoebe: Just, 'cause, I don't want her to go through what I went through with Carl- oh!'''
+
+# character = re.findall(r'[A-Z].+?:\s', w)
+character = re.findall(r'[A-Za-z]+:', w)
+# character_set = set(character)
+character_lst = list(set(character))
+
+print(character_lst)
+
+character_new =[]
+
+for item in character_lst:
+  # character_lst += item[:-1]
+  item = item[:-1]
+  character_new += [item]
+  # print(item)
+
+print(character_new)
