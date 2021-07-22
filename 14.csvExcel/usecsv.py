@@ -4,7 +4,7 @@
 # module 파일 위치는?
 
 # CSV 형태 list를 csv 파일로 저장하는 함수 
-import csv
+import csv, re
 
 
 def writecsv(filename, the_list):
@@ -19,4 +19,13 @@ def readcsv(filename):
     new = []
     for item in reader:
       new.append(item)
-      return new
+    return new  # 들여쓰기 중요하다
+
+def switch(listName):
+  for i in listName:
+    for j in i:
+      try:
+        i[i.index(j)] = (float(re.sub(',', '', j)))
+      except:
+        pass
+  return listName
